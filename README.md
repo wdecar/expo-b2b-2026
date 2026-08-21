@@ -31,3 +31,9 @@ expo-b2b-2026/
 ├── Screenshot_2026-08-21...
 ├── 782075286_397334028... (imagens/banner)
 └── README.md
+
+
+### ⚙️ Como Rodar Localmente
+1. Clone o repositório:
+```bash
+git clone https://github.com/SEU-USUARIO/expo-b2b-2026.git
