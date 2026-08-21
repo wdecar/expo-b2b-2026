@@ -43,3 +43,17 @@ body{background:#0a0a0a;color:#fff;font-family:'Montserrat',sans-serif;line-heig
 .cta p{color:#666;font-size:13px;margin-top:18px}
 
 /* FOOTER */
+footer{padding:28px 5%;border-top:1px solid #222;display:flex;justify-content:space-between;align-items:center;color:#666;font-size:12px;flex-wrap:wrap;gap:12px}
+footer a{color:#888;text-decoration:none;margin-left:12px}
+footer a:hover{color:#D4AF37}
+
+/* MOBILE */
+@media(max-width:850px){
+.header{flex-direction:column;gap:10px;padding:12px 5%}
+.header nav{margin-top:5px}
+.header nav a{margin:0 8px;font-size:12px}
+.hero{grid-template-columns:1fr;padding-top:160px}
+.hero-text h1{font-size:36px}
+.hero-img img{height:340px}
+.stats{grid-template-columns:1fr}
+}
