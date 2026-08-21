@@ -1,59 +1,60 @@
-/* EXPO B2B 2026 - BLACK & GOLD EDITION - style.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+/* HERO - mais respiro embaixo pra não colar na próxima seção */
+.hero{
+  padding:130px 5% 90px; /* era 60px, foi pra 90px */
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:50px; /* era 35px */
+  align-items:center;
+  min-height:80vh;
+  background:radial-gradient(at 70% 10%, rgba(212,175,55,0.15), transparent 60%)
+}
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;color:#fff;font-family:'Montserrat',sans-serif;line-height:1.6}
+.hero-img img{
+  width:100%;
+  height:480px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid rgba(212,175,55,0.35);
+  box-shadow:0 20px 40px rgba(0,0,0,0.6);
+  margin-top:10px; /* afasta da tag de cima no mobile */
+}
 
-/* HEADER */
-.header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(212,175,55,0.25);display:flex;justify-content:space-between;align-items:center;padding:15px 5%}
-.logo{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:2px;font-size:20px}
-.logo span{color:#D4AF37}
-.header nav a{color:#ccc;margin-left:18px;font-size:13px;text-decoration:none;letter-spacing:0.5px;transition:.2s}
-.header nav a:hover{color:#D4AF37}
-.btn-gold{background:linear-gradient(135deg,#D4AF37,#FFD700);color:#000 !important;padding:10px 20px;border-radius:4px;font-weight:800;text-decoration:none;font-size:12px;display:inline-block;transition:.2s}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(212,175,55,0.3)}
-.btn-outline{border:1px solid #333;color:#fff !important;padding:10px 20px;border-radius:4px;text-decoration:none;font-weight:600;font-size:12px;display:inline-block}
+/* STATS - dá um respiro */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(212,175,55,0.25);
+  border-bottom:1px solid rgba(212,175,55,0.25);
+  background:#111;
+  margin-top:30px; /* novo */
+}
 
-/* HERO */
-.hero{padding:130px 5% 60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:35px;align-items:center;min-height:80vh;background:radial-gradient(at 70% 10%, rgba(212,175,55,0.15), transparent 60%)}
-.tag{border:1px solid #D4AF37;color:#D4AF37;display:inline-block;padding:6px 14px;border-radius:20px;font-size:10px;letter-spacing:2px;margin-bottom:18px}
-.hero-text h1{font-family:'Playfair Display',serif;font-size:52px;line-height:1.05;margin-bottom:15px}
-.hero-text h1 span{color:#D4AF37}
-.hero-text p{color:#9a9a9a;font-size:16px;margin-bottom:25px;max-width:500px}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-.hero-img img{width:100%;height:480px;object-fit:cover;border-radius:14px;border:1px solid rgba(212,175,55,0.35);box-shadow:0 20px 40px rgba(0,0,0,0.6)}
-
-/* STATS */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(212,175,55,0.25);border-bottom:1px solid rgba(212,175,55,0.25);background:#111}
-.stats div{padding:24px;text-align:center}
-.stats b{color:#D4AF37;font-size:28px;font-family:'Playfair Display',serif;display:block}
-.stats p{color:#777;font-size:11px;letter-spacing:2px;margin-top:4px}
-
-/* GALERIA */
-.galeria{padding:65px 5%}
-.galeria h2{font-family:'Playfair Display',serif;font-size:34px;margin-bottom:25px}
-.galeria h2 span{color:#D4AF37}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px}
-.grid img{width:100%;height:270px;object-fit:cover;border-radius:10px;border:1px solid #222;transition:.3s}
-.grid img:hover{border-color:#D4AF37;transform:translateY(-4px)}
+/* GALERIA - aqui estava o "muito perto de uma imagem pra outra" */
+.galeria{
+  padding:90px 5%; /* era 65px */
+}
+.galeria h2{
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  margin-bottom:35px; /* era 25px */
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:32px; /* ERA 15px - AQUI ESTÁ A MUDANÇA PRINCIPAL */
+}
+.grid img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid #222;
+  transition:.3s;
+  margin-bottom:8px; /* respiro extra */
+}
 
 /* CTA */
-.cta{margin:40px 5%;padding:55px 20px;background:linear-gradient(180deg,#151515,#0e0e0e);border:1px solid rgba(212,175,55,0.35);border-radius:14px;text-align:center}
-.cta h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:18px}
-.cta p{color:#666;font-size:13px;margin-top:18px}
-
-/* FOOTER */
-footer{padding:28px 5%;border-top:1px solid #222;display:flex;justify-content:space-between;align-items:center;color:#666;font-size:12px;flex-wrap:wrap;gap:12px}
-footer a{color:#888;text-decoration:none;margin-left:12px}
-footer a:hover{color:#D4AF37}
-
-/* MOBILE */
-@media(max-width:850px){
-.header{flex-direction:column;gap:10px;padding:12px 5%}
-.header nav{margin-top:5px}
-.header nav a{margin:0 8px;font-size:12px}
-.hero{grid-template-columns:1fr;padding-top:160px}
-.hero-text h1{font-size:36px}
-.hero-img img{height:340px}
-.stats{grid-template-columns:1fr}
+.cta{
+  margin:80px 5%; /* era 40px */
+  padding:65px 20px;
 }
