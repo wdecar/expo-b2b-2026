@@ -22,3 +22,12 @@ Site institucional desenvolvido para a **Expo B2B 2026**. O projeto tem como obj
 - **Git & GitHub** - Versionamento
 
 ### 📁 Estrutura do Projeto
+
+expo-b2b-2026/
+├── contato.html
+├── expositor.html
+├── sobre.html
+├── style.css
+├── Screenshot_2026-08-21...
+├── 782075286_397334028... (imagens/banner)
+└── README.md
