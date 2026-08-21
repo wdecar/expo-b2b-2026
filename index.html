@@ -56,5 +56,10 @@
     <a href="#">Privacidade</a>
   </div>
 </footer>
+  <script>
+window.addEventListener('scroll', () => {
+  document.querySelector('header').classList.toggle('scrolled', window.scrollY > 20);
+});
+  </script>
 </body>
 </html>
